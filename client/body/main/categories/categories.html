@@ -1,0 +1,16 @@
+<template name="categories">
+  <div class="ui vertical menu purple">
+    <a class="item" {{b "class: { active: !selectedCategory }, click: selectedCategory(null)"}}>
+      <b>All Categories</b>
+    </a>
+    {{#each categories}}
+        {{> category }}
+    {{/each }}
+    <div class="item">
+      <div class="ui transparent icon input">
+        <input type="text" placeholder="New Category..." {{b "value: newCategory, enter: addNewCategory"}}>
+        <i class="plus icon green link" {{b "if: newCategory, click: addNewCategory, attr: { title: addTitle }"}} ></i>
+      </div>
+    </div>
+  </div>
+</template>

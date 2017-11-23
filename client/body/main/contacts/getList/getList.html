@@ -1,0 +1,45 @@
+<template name="getList">
+  <div class="ui attached segment">
+    <div class="ui two column grid">
+      <div class="field">
+            <div class="ui button" {{b "click: getListFromServer, text: getListText"}}></div>
+          </div>
+      <!--div class="ui column">
+        <form class="ui form">
+          <div class="field required" {{b "class: { error: upsertHover && !name }"}}>
+            <label>Name</label>
+            <input type="text" placeholder="Name" {{b "value: name"}}>
+          </div>
+          <div class="field required" {{b "class: { error: upsertHover && !number }"}}>
+            <label>Number</label>
+            <input type="text" placeholder="Number" {{b "value: number"}}>
+          </div>
+          <div class="field required" {{b "class: { error: upsertHover && !job }"}}>
+            <label>Job</label>
+            <input type="job" placeholder="Job/Work" {{b "value: job"}}>
+          </div>
+          <div class="field required" {{b "class: { error: upsertHover && !jobLocation }"}}>
+            <label>Job Location</label>
+            <input type="jobLocation" placeholder="Job/Work Location" {{b "value: jobLocation"}}>
+          </div>
+          <div class="field required" {{b "class: { error: upsertHover && !address }"}}>
+            <label>Address</label>
+            <input type="address" placeholder="Permanent Address" {{b "value: address"}}>
+          </div>
+          <div class="field required" {{b "class: { error: upsertHover && !categoryId }"}}>
+            <label>Category</label>
+            <select class="ui dropdown"
+              {{b "ref: categoriesDropdown, options: categories, optionsText: name, optionsValue: _id, defaultText: 'Select a Category...', value: categoryId"}}>
+            </select>
+          </div>
+          <div class="field">
+            <div class="ui button" {{b "click: upsert, text: upsertText, hover: upsertHover, class: { primary: canUpsert }"}}></div>
+          </div>
+        </form>
+      </div-->
+    </div>
+  </div>
+  
+ 
+ 
+</template>

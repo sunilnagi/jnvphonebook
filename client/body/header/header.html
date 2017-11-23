@@ -1,0 +1,17 @@
+<template name="header">
+  <div class="ui fixed main menu inverted" {{b "style: style"}}>
+    <div class="title item">
+      <b>Phonebook</b>
+    </div>
+
+    <div class="right menu " {{b "if: showSearch"}} >
+      <div class="item">
+        <div class="ui icon input inverted">
+          <input type="text" placeholder="Search..." {{b "value: searchText, throttle: 400"}}>
+          <i class="search link icon" {{b "if: !searchText"}}></i>
+          <i class="remove link icon" {{b "if: searchText, click: searchText('')"}}></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

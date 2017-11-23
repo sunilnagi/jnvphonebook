@@ -1,0 +1,10 @@
+/.meteor/local
+/.git
+/.build
+/packages
+/c
+/*.iml
+/.idea
+/smart.lock
+/tests/nightwatch/reports
+/tests/nightwatch/tests_output

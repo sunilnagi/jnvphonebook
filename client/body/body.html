@@ -1,0 +1,13 @@
+<body>
+  {{> header}}
+  <div class="ui one column centered grid">
+    <div id="body-main" class="column">
+      <br>
+        {{#if hasUser}}
+            {{> main }}
+        {{else}}
+          {{> main }}
+        {{/if}}
+    </div>
+  </div>
+</body>

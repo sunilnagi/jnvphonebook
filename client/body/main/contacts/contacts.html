@@ -1,0 +1,15 @@
+<template name="contacts">
+  <div class="ui two column grid top attached">
+    <div class="column">
+      <div class="ui button fluid" {{b "click: showContacts, text: getContactHeading,  class: { positive: !getListMode }"}}></div>
+    </div>
+    <div class="column">
+      <div class="ui button fluid" {{b "click: getListMode(true), text: getListText"}}></div>
+    </div>
+  </div>
+  {{#if getListMode }}
+    {{> getList }}
+  {{else }}
+    {{> contactList }}
+  {{/if }}
+</template>

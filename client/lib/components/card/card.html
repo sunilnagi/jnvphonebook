@@ -1,0 +1,25 @@
+<template name="card">
+  <div class="ui card">
+    <div class="image">
+      <img {{b "attr: { src: imageUrl }"}}>
+    </div>
+    <div class="content">
+      <div class="header" {{b "text: name"}}></div>
+      <div class="meta">
+        <span {{b "text: category"}}></span>
+      </div>
+    </div>
+    <div class="extra content">
+      <div>
+        <i class="call icon"></i>
+        <span {{b "text: number"}}></span>
+      </div>
+    </div>
+    <div class="extra content">
+      <div>
+        <i class="mail icon"></i>
+        <span {{b "text: email"}}></span>
+      </div>
+    </div>
+  </div>
+</template>
